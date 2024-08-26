@@ -1,0 +1,14 @@
+package com.example.demo.dao;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.example.demo.entity.Editorial;
+
+public interface EditorialDao {
+	Editorial create(Editorial E);
+    Editorial update(Editorial E);
+	void delete(Long id);
+	Optional<Editorial>read(long id);
+	List<Editorial> readALL();
+}
